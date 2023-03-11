@@ -1,0 +1,27 @@
+.visual {
+	$block: &;
+
+    background: linear-gradient(0deg, black 50%, rgba(0, 0, 0, 0) 50%);
+    padding-left: 30rem;
+	
+	&__inner {
+		@include grid;
+	}
+
+	&__visual {
+		grid-column: 2 / span 3;
+		aspect-ratio: 1 / 1;
+		margin-right: -$page-padding-small;
+		line-height: 0;
+
+		@include mq(tablet) {
+			margin-right: -$page-padding-big;
+			grid-column: 3 / span 10;
+			aspect-ratio: 820 / 410;
+		}
+
+		&__image {
+			@include object-fit(cover);
+		}
+	}
+}

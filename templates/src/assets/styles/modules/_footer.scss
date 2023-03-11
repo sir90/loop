@@ -1,0 +1,49 @@
+.footer{
+	$block: &;
+	padding-bottom: 2rem;
+	background: linear-gradient(
+    to right,
+    black 0%,
+    black 50%,
+	$color-primary 50%,
+	$color-primary 100%
+  );
+
+	color: white;
+	&__inner{
+		display: flex;
+
+		justify-content: space-between;
+	}
+
+	&__logo {
+		width: 50vw;
+	}
+
+
+	&__links {
+		width: 50vw;
+		margin-top: $spacing-04;		
+		
+		&-list{
+			float:left;
+ 			width:49.9%;
+			text-decoration: none;
+		}
+
+	}
+
+	&-navigation__links{
+		list-style-type: none;
+		margin: 7rem;
+		display: flex;
+		gap: 3rem;
+		flex-direction: column;
+	}
+
+	&-navigation__logo{
+		height: 82px;
+	}
+
+}
+

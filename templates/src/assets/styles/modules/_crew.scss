@@ -1,0 +1,140 @@
+.crew{
+
+	$block: &;
+	background: black;
+
+	padding-bottom: 12rem;
+
+	&__inner{
+	display: flex;
+    flex-wrap: wrap;
+	}
+
+	&__container{
+		position:relative;
+		width: 500px;
+		height: 500px;
+		z-index: 2;
+		transform: all 0ms;	
+		&:hover{
+			z-index: 3;
+			transform: all 100ms 1s;
+			.crew__info{
+				transform: translateX(100%);
+			}
+			.crew__image{
+				filter:unset;
+				
+			}
+			
+
+			&:nth-child(1n){
+				.crew__info-rowOne{
+					transform: translateY(100%) !important;
+				}
+			}
+
+			&:nth-child(2n){
+				.crew__info-rowTwo{
+					transform: translateY(100%) !important;
+				}
+			}
+
+			&:nth-child(4n){
+				.crew__info-rowFour{
+					transform: translateY(100%) !important;
+				}
+			}
+
+			&:nth-child(5n){
+				.crew__info-rowFive{
+					transform: translateY(100%) !important;
+				}
+			}
+
+			&:nth-child(6n){
+				.crew__info-rowSix{
+					transform: translateY(100%) !important;
+				}
+			}
+
+		}
+
+
+		
+	}
+	
+	&__image{
+			z-index: 1;
+			position:relative;
+			transition: z-index 0 ease-in-out;
+			filter: grayscale(100%);
+			width: 100%;
+			object-fit: cover;
+			height: 100%;
+	}
+	
+	&__info{
+		visibility: visible;
+		position: absolute;
+		top: 0rem;
+		left: 0rem;
+		background-color: white;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		padding: 2rem;
+		flex-direction: column;
+		transform: translateX(0);
+		transform: translateY(0);
+		transition: all 600ms ease-in-out;
+			&-title{
+			font-weight: 700;
+			color: $color-primary;
+			font-size: 24px;
+		
+			}
+			&-subtitle{
+				color: black;
+				font-size: 16px;
+
+			}
+	}
+	
+	
+	&__button{
+		display: flex;
+		justify-content: center;
+	}
+
+}
+
+.mobile-only{
+	display:none;
+
+	@media (max-width: 1090px) {
+		display:unset;
+	}
+
+}
+
+.sub-navigation__inner-pagination{
+	display: flex;
+	justify-content: end;
+}
+
+.pagination-links{
+	padding: 0.8rem;
+	&:hover{
+		border-bottom: 2px solid #C4132F;
+		}
+}
+
+.navigation__links__item{
+	opacity: unset !important;
+	&:hover{
+		color: $color-primary;
+	}
+}
+
