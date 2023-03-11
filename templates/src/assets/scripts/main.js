@@ -49,7 +49,6 @@ async function loadCrew (filterInfo) {
 }
 
 export function filtered (event) {
-	console.log('test id', event.target.id);
 	const htmlContainer = document.getElementById('crew__inner');
 	const numberToLoad = htmlContainer.children.length + 5;
 
@@ -60,15 +59,15 @@ export function filtered (event) {
 		break;
 	case 'getTrim':
 		removeAllChildNodes(htmlContainer);
-		loadCrewHtml('?duty=trim');
+		loadCrewHtml('?duty=trim&limit=100');
 		break;
 	case 'getTactic':
 		removeAllChildNodes(htmlContainer);
-		loadCrewHtml('?duty=tactic');
+		loadCrewHtml('?duty=tactic&limit=100');
 		break;
 	case 'getHelmsman':
 		removeAllChildNodes(htmlContainer);
-		loadCrewHtml('?duty=helmsman');
+		loadCrewHtml('?duty=helmsman&limit=100');
 		break;
 	case 'rowOne':
 		changeElementsPerRow(100);

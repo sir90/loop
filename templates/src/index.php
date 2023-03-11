@@ -137,110 +137,106 @@ include($root_path . '/partials/head.php');
 					'class' => 'crew__subtitle'
 				]); ?>
          	</div>
-		<div class="navigation__main">
+			 <div class="navigation__main">
 				<ul class="sub-navigation__links">
-                				<li>
-                					<a class="navigation__links__item label color-light" id="getAll">show all</a>
-                				</li>
-                				<li>
-                					<a class="navigation__links__item label color-light" id="getTrim">trim</a>
-                				</li>
-                				<li>
-                					<a class="navigation__links__item label color-light" id="getTactic">tactic</a>
-                				</li>
-                				<li>
-                                    <a class="navigation__links__item label color-light" id="getHelmsman">helmsman</a>
-                             </li>
+                	<li>
+                		<a class="navigation__links__item label color-light" id="getAll">show all</a>
+                	</li>
+                	<li>
+                		<a class="navigation__links__item label color-light" id="getTrim">trim</a>
+                	</li>
+                	<li>
+                		<a class="navigation__links__item label color-light" id="getTactic">tactic</a>
+                	</li>
+                	<li>
+                        <a class="navigation__links__item label color-light" id="getHelmsman">helmsman</a>
+                    </li>
                 </ul>
          </div>
-	 	 </div>
+	</div>
 	</div>
 </section>
+
 <section class="crew" >
 	<div class="crew__inner" id="crew__inner">
-	
-	<!--loading Crew-Members through main.js-->
-			
+		
+		<!--loading Crew-Members through main.js-->
+				
+		</div>
+	<div class="container">
+		<div class="sub-navigation__inner-pagination">
+			<ul class="sub-navigation__links">
+			<li>
+				<a class="color-light pagination-links mobile-only" id="rowOne">1</a>
+			</li>
+			<li>
+				<a class="color-light pagination-links mobile-only" id="rowTwo">2</a>
+			</li>
+			<li>
+				<a class="color-light pagination-links" id="rowFour">4</a>
+			</li>
+			<li>
+				<a class="color-light pagination-links" id="rowFive">5</a>
+			</li>
+			<li>
+				<a class="color-light pagination-links" id="rowSix">6</a>
+			</li>
+			</ul>
+		</div>
 	</div>
-<div class="container">
-	<div class="sub-navigation__inner-pagination">
-		<ul class="sub-navigation__links">
-		<li>
-			<a class="color-light pagination-links mobile-only" id="rowOne">1</a>
-		</li>
-		<li>
-			<a class="color-light pagination-links mobile-only" id="rowTwo">2</a>
-		</li>
-		<li>
-			<a class="color-light pagination-links" id="rowFour">4</a>
-		</li>
-		<li>
-			<a class="color-light pagination-links" id="rowFive">5</a>
-		</li>
-		<li>
-			<a class="color-light pagination-links" id="rowSix">6</a>
-		</li>
-		</ul>
-	 </div>
- </div>
 	<div class="crew__button">
-
 	<?php echo generate_component_button([
-					'style' => 'primary-white',
-					'class' => 'crew-button-event',
-					'label' => 'load more',
-				]) ?>
+						'style' => 'primary-white',
+						'class' => 'crew-button-event',
+						'label' => 'load more',
+					]) ?>
 	</div>
-
 </section>
 
 <section class="footer">
-<div class="container">
-	<div class="footer__inner">
-<div class="footer__logo">
-	<a href="#" class="navigation__logo">
-		<img class="footer-navigation__logo" src="/assets/images/logo.svg" alt="Segelteam">
-	</a>
-</div>
-<div class="footer__links">
-<div class="footer__links-list">
-
-	<ul class="footer-navigation__links">
-        <li>
-        	<a class="navigation__links__item  color-light" href="#">About us</a>
-        </li>
-        <li>
-            <a class="navigation__links__item  color-light" href="#">Gallery</a>
-        </li>
-        <li>
-            <a class="navigation__links__item  color-light" href="#crew">Crew</a>
-        </li>
-        <li>
-         <a class="navigation__links__item  color-light" href="#">Contact</a>
-        </li>
- </ul>
- </div>
- <div class="footer__links-list">
-
- 	<ul class="footer-navigation__links">
-        <li>
-        	<a class="navigation__links__item  color-light" href="#">Impressum</a>
-        </li>
-        <li>
-            <a class="navigation__links__item   color-light" href="#">Datenschutz</a>
-        </li>
-        <li>
-            <a class="navigation__links__item  color-light" href="#">Rechtliches</a>
-        </li>
-        <li>
-         <a class="navigation__links__item  color-light" href="#">Copyright</a>
-        </li>
- </ul>
- </div>
- </div>
-	
-</div>
-</div>
+   <div class="container">
+      <div class="footer__inner">
+         <div class="footer__logo">
+            <a href="#" class="navigation__logo">
+            <img class="footer-navigation__logo" src="/assets/images/logo.svg" alt="Segelteam">
+            </a>
+         </div>
+         <div class="footer__links">
+            <div class="footer__links-list">
+               <ul class="footer-navigation__links">
+                  <li>
+                     <a class="navigation__links__item  color-light" href="#">About us</a>
+                  </li>
+                  <li>
+                     <a class="navigation__links__item  color-light" href="#">Gallery</a>
+                  </li>
+                  <li>
+                     <a class="navigation__links__item  color-light" href="#crew">Crew</a>
+                  </li>
+                  <li>
+                     <a class="navigation__links__item  color-light" href="#">Contact</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__links-list">
+               <ul class="footer-navigation__links">
+                  <li>
+                     <a class="navigation__links__item  color-light" href="#">Impressum</a>
+                  </li>
+                  <li>
+                     <a class="navigation__links__item   color-light" href="#">Datenschutz</a>
+                  </li>
+                  <li>
+                     <a class="navigation__links__item  color-light" href="#">Rechtliches</a>
+                  </li>
+                  <li>
+                     <a class="navigation__links__item  color-light" href="#">Copyright</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
 </section>
 
 <?php include($root_path . '/partials/foot.php'); ?>
